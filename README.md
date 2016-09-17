@@ -17,10 +17,10 @@ The following **required** functionality is complete:
 * [x] User can change default tip percentage
 
 The following **optional** features are implemented:
-* [ ] Bill amount is always the first responder
-* [ ] Keyboard is always visible
-* [ ] Tip and total amounts have thousands seperator and currency format
-* [ ] User interface has lively colors and layout
+* [x] Bill amount is always the first responder
+* [x] Keyboard is always visible
+* [x] Tip and total amounts have thousands seperator and currency format
+* [x] User interface has lively colors and layout
 * [ ] Locale-specific currency -- *in progress*
 * [ ] UI animations -- *in progress*
 * [ ] Remembering the bill amount across app restarts (if <10mins) -- *in progress*
