@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Walkthrough of implemented user stories:
 <img src='http://imgur.com/Q1W2hpD' title='Video Walkthrough' alt='Tippy Video Walkthrough' />
-![alt text](http://imgur.com/Q1W2hpD "Tippy Video Walkthrough")
+![alt text](http://i.imgur.com/Q1W2hpD.gif "Tippy Video Walkthrough")
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
