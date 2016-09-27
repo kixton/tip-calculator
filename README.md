@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Walkthrough of implemented user stories. GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-![alt text](http://imgur.com/a/CKRNZ "Tippy Video Walkthrough v2")
+![alt text](http://i.imgur.com/YwSVcOX.gif "Tippy Video Walkthrough v2")
 ![alt text](http://i.imgur.com/Q1W2hpD.gif "Tippy Video Walkthrough v1")
 
 
