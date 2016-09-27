@@ -30,10 +30,11 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough 
 
-Walkthrough of implemented user stories:
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Walkthrough of implemented user stories. GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+![alt text](http://i.imgur.com/Q1W2hpD.gif "Tippy Video Walkthrough")
+
+
 
 ## Notes
 
