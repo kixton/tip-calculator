@@ -21,12 +21,10 @@ The following **optional** features are implemented:
 * [x] Keyboard is always visible
 * [x] Tip and total amounts have thousands seperator and currency format
 * [x] User interface has lively colors and layout
-* [ ] Locale-specific currency -- *in progress*
-* [ ] UI animations -- *in progress*
-* [ ] Remembering the bill amount across app restarts (if <10mins) -- *in progress*
+* [x] UI animations for the split total to appear after 10 seconds
 
 The following **additional** features are implemented:
-* [ ] TBU
+* [x] Split bill with more than 1 person
 
 ## Video Walkthrough 
 
