@@ -14,10 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
-
+    @IBOutlet weak var splitPeople: UITextField!
+    @IBOutlet weak var splitLabel: UILabel!
+    @IBOutlet weak var splitView: UIView!
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         billField .becomeFirstResponder()
+        
         let defaults = UserDefaults.standard
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTipAmount")
         calculateTip()
@@ -55,9 +59,17 @@ class ViewController: UIViewController {
         let bill = Double(billField.text!) ?? 0
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
+        let numberSplits = Double(splitPeople.text!) ?? 1
+        let split = (total / numberSplits)
 
+        splitLabel.text = formatNumber(dub: split)
         tipLabel.text = formatNumber(dub: tip)
         totalLabel.text = formatNumber(dub: total)
+        
+        UIView.animate(withDuration: 10) {
+            self.splitView.alpha = 1
+        }
+        
     }
 
     @IBAction func calculateTip(_ sender: AnyObject) {

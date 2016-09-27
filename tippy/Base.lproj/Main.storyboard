@@ -70,20 +70,69 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many people to split with?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yl-5F-xUT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="1" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="sQJ-vL-g2V">
+                                <frame key="frameInset" minX="263" minY="291" width="102" height="17"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="HtP-L5-5gv"/>
+                                    <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="LL1-8V-8gO"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="K6b-5W-PH2"/>
+                                </connections>
+                            </textField>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGB-ZV-gIN">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per person" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xh-fS-NUz">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmQ-Ci-lfx">
+                                        <frame key="frameInset" minX="170" minY="23" width="185" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5Xh-fS-NUz" firstAttribute="leading" secondItem="aGB-ZV-gIN" secondAttribute="leading" id="L5V-a8-jDQ"/>
+                                    <constraint firstItem="5Xh-fS-NUz" firstAttribute="top" secondItem="aGB-ZV-gIN" secondAttribute="top" constant="21" id="Oe7-vV-ms8"/>
+                                    <constraint firstAttribute="height" constant="44" id="QPK-GV-o5H"/>
+                                    <constraint firstItem="hmQ-Ci-lfx" firstAttribute="top" secondItem="aGB-ZV-gIN" secondAttribute="top" constant="23" id="SRa-iR-ZDP"/>
+                                    <constraint firstAttribute="trailing" secondItem="hmQ-Ci-lfx" secondAttribute="trailing" id="rlh-u8-5VG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Tfh-eP-hVB" secondAttribute="trailing" constant="10" id="19F-XL-pMO"/>
                             <constraint firstItem="0Cg-kM-ttW" firstAttribute="top" secondItem="Tfh-eP-hVB" secondAttribute="bottom" constant="17" id="4mr-9c-1mn"/>
+                            <constraint firstItem="5Yl-5F-xUT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="8a2-Hu-LMr"/>
                             <constraint firstItem="229-yi-Gqm" firstAttribute="top" secondItem="EhZ-zP-psO" secondAttribute="bottom" constant="5" id="9dg-Dg-aE0"/>
+                            <constraint firstAttribute="trailing" secondItem="aGB-ZV-gIN" secondAttribute="trailing" constant="10" id="Ffb-Zv-iW8"/>
                             <constraint firstAttribute="trailing" secondItem="EhZ-zP-psO" secondAttribute="trailing" constant="10" id="Fm4-4G-PTC"/>
                             <constraint firstItem="0Cg-kM-ttW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Iuh-nh-OQ8"/>
+                            <constraint firstItem="aGB-ZV-gIN" firstAttribute="top" secondItem="5Yl-5F-xUT" secondAttribute="bottom" constant="8" id="PFl-Ij-TQg"/>
+                            <constraint firstItem="aGB-ZV-gIN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="SSF-aS-qFh"/>
                             <constraint firstAttribute="trailing" secondItem="229-yi-Gqm" secondAttribute="trailing" constant="10" id="Ts6-yt-4fh"/>
+                            <constraint firstItem="5Yl-5F-xUT" firstAttribute="top" secondItem="229-yi-Gqm" secondAttribute="bottom" constant="27" id="TtR-MS-Cvo"/>
+                            <constraint firstItem="sQJ-vL-g2V" firstAttribute="top" secondItem="229-yi-Gqm" secondAttribute="bottom" constant="29" id="WVq-KL-GlD"/>
                             <constraint firstItem="Tfh-eP-hVB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Xdw-nE-mcW"/>
+                            <constraint firstAttribute="trailing" secondItem="sQJ-vL-g2V" secondAttribute="trailing" constant="10" id="bM4-WJ-hza"/>
                             <constraint firstItem="EhZ-zP-psO" firstAttribute="top" secondItem="0Cg-kM-ttW" secondAttribute="bottom" constant="14" id="cLn-eo-zai"/>
                             <constraint firstItem="Tfh-eP-hVB" firstAttribute="top" secondItem="gOL-fE-OP7" secondAttribute="bottom" constant="8" id="eFn-ch-uKo"/>
+                            <constraint firstItem="5Yl-5F-xUT" firstAttribute="top" secondItem="229-yi-Gqm" secondAttribute="bottom" constant="27" id="hK4-BG-hCB"/>
                             <constraint firstAttribute="trailing" secondItem="0Cg-kM-ttW" secondAttribute="trailing" constant="10" id="nX9-H2-2ax"/>
+                            <constraint firstItem="5Yl-5F-xUT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="zMS-FA-ELO"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="7Ud-pT-LlX" appends="YES" id="z1E-8z-4AD"/>
@@ -98,6 +147,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="Tfh-eP-hVB" id="U5j-hT-rdJ"/>
+                        <outlet property="splitLabel" destination="hmQ-Ci-lfx" id="aFD-I9-mHd"/>
+                        <outlet property="splitPeople" destination="sQJ-vL-g2V" id="ygA-FF-ZlC"/>
+                        <outlet property="splitView" destination="aGB-ZV-gIN" id="KhS-xA-0lg"/>
                         <outlet property="tipControl" destination="0Cg-kM-ttW" id="TuY-wo-Tt3"/>
                         <outlet property="tipLabel" destination="EhZ-zP-psO" id="gJY-QO-Iqn"/>
                         <outlet property="totalLabel" destination="229-yi-Gqm" id="xcR-zT-DZE"/>
@@ -110,7 +162,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="577" y="153"/>
+            <point key="canvasLocation" x="576.5" y="152.5"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="KTH-1w-axS">
