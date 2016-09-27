@@ -36,7 +36,7 @@ Walkthrough of implemented user stories. GIF created with [LiceCap](http://www.c
 
 ## Notes
 
-Encountered challenges with formatting.
+Encountered challenges with UI styling.
 
 ## License
 
