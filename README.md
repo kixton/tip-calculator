@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 * [x] Keyboard is always visible
 * [x] Tip and total amounts have thousands seperator and currency format
 * [x] User interface has lively colors and layout
-* [x] UI animations for the split total to appear after 10 seconds
+* [x] UI animations
 
 The following **additional** features are implemented:
 * [x] Split bill with more than 1 person
@@ -30,7 +30,8 @@ The following **additional** features are implemented:
 
 Walkthrough of implemented user stories. GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-![alt text](http://i.imgur.com/Q1W2hpD.gif "Tippy Video Walkthrough")
+![alt text](http://imgur.com/a/CKRNZ "Tippy Video Walkthrough v2")
+![alt text](http://i.imgur.com/Q1W2hpD.gif "Tippy Video Walkthrough v1")
 
 
 
