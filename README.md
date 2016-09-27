@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 Walkthrough of implemented user stories. GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
+Left shows the update with split bill. Right was the initial walkthrough submitted by the early deadline.
 ![alt text](http://i.imgur.com/YwSVcOX.gif "Tippy Video Walkthrough v2")
 ![alt text](http://i.imgur.com/Q1W2hpD.gif "Tippy Video Walkthrough v1")
 
